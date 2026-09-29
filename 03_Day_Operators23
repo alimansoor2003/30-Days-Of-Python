@@ -1,0 +1,5 @@
+"""solution of 03_Day_Operators23"""
+
+for n in range(1, 6):
+    row = [n**p for p in range(4)]
+    print(*row)
