@@ -459,6 +459,18 @@ The sum of all numbers is 5050.
    1. What are the total number of languages in the data
    2. Find the ten most spoken languages from the data
    3. Find the 10 most populated countries in the world
+  
+      
+"""Answer of Q.3"""
+population_data=[]
+for country in data:
+    if 'population' in country and 'name' in country:
+        population_data.append((country['population'],country['name']))
+print(population_data)
+print(max(population_data))
+sorted_value=sorted(population_data,reverse=True)
+top10=sorted_value[:11]
+print(f"The 10 most populated country are {top10}")
 
 🎉 CONGRATULATIONS ! 🎉
 
